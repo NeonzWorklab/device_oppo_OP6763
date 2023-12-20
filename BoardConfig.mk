@@ -47,5 +47,9 @@ BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
 # Platform
 TARGET_BOARD_PLATFORM := mt6763
 
+# Recovery
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Inherit the proprietary files
 include vendor/oppo/OP6763/BoardConfigVendor.mk
