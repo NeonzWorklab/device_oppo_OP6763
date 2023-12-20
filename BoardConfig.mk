@@ -51,5 +51,8 @@ TARGET_BOARD_PLATFORM := mt6763
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Inherit the proprietary files
 include vendor/oppo/OP6763/BoardConfigVendor.mk
