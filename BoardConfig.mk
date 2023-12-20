@@ -21,5 +21,12 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Display
 TARGET_SCREEN_DENSITY := 480
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := full_oppo6763_17031
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6763
+
 # Inherit the proprietary files
 include vendor/oppo/OP6763/BoardConfigVendor.mk
